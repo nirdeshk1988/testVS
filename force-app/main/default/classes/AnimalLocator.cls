@@ -7,7 +7,7 @@ public class AnimalLocator{
         HttpResponse response=ht.send(request);
         if(response.getStatusCode()==200){
             AnimalParsor aniamlP=new AnimalParsor();
-           aniamlP= AnimalParsor.parse(response.getBody());
+         //  aniamlP= AnimalParsor.parse(response.getBody());
            system.debug('------'+aniamlP);
             return aniamlP.animal.name;
         }else{
