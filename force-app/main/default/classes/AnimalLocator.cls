@@ -8,7 +8,7 @@ public class AnimalLocator{
         if(response.getStatusCode()==200){
             AnimalParsor aniamlP=new AnimalParsor();
            aniamlP= AnimalParsor.parse(response.getBody());
-           system.debug('------'+aniamlP);
+          // system.debug('------'+aniamlP);
             return aniamlP.animal.name;
         }else{
             return 'Not Found';
