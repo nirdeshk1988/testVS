@@ -9,7 +9,7 @@ public class AnimalLocator{
             AnimalParsor aniamlP=new AnimalParsor();
            aniamlP= AnimalParsor.parse(response.getBody());
            system.debug('------'+aniamlP);
-          // System.debug('***********');
+          // System.debug('*****test******');
             return aniamlP.animal.name;
         }else{
             return 'Not Found';
